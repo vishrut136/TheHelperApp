@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <SeekBar
+            android:id="@+id/timerSeekBar"
+            android:layout_width="356dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+        <ImageView
+            android:id="@+id/eggTimer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/timerSeekBar"
+            android:layout_marginTop="59dp"
+            app:srcCompat="@drawable/eggclip"
+            android:layout_alignLeft="@+id/timerSeekBar"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="155dp"
+            android:layout_height="87dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="153dp"
+            android:layout_marginEnd="87dp"
+            android:text="0:30"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="50sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="87dp"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/controllerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="75dp"
+            android:layout_marginEnd="135dp"
+            android:onClick="controlTimer"
+            android:text="Go!"
+            android:layout_alignParentRight="true"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
